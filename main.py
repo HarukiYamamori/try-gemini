@@ -29,6 +29,7 @@ def generate_math_problems_json(genre, difficulty, num_problems):
         return None
 
 
+# 引数は「単元」「レベル」「問題数」を自由に設定
 json_result = generate_math_problems_json("二次関数", "上級", 5)
 if json_result:
     cnt = 1
