@@ -29,13 +29,17 @@ def generate_math_problems_json(genre, difficulty, num_problems):
         return None
 
 
-# 引数は「単元」「レベル」「問題数」を自由に設定
-json_result = generate_math_problems_json("二次関数", "上級", 5)
-if json_result:
-    cnt = 1
-    for problem in json_result:
-        print(f"第{cnt}問")
-        print(f"問題: {problem['problem']}")
-        print(f"解答: {problem['answer']}")
-        print(f"解説: {problem['explanation']}\n")
-        cnt += 1
+if __name__ == "__main__":
+    genre = "二次関数"
+    difficulty = "上級"
+    num_problems = 5
+    # 引数は「単元」「レベル」「問題数」を自由に設定
+    json_result = generate_math_problems_json(genre, difficulty, num_problems)
+    if json_result:
+        cnt = 1
+        for problem in json_result:
+            print(f"第{cnt}問")
+            print(f"問題: {problem['problem']}")
+            print(f"解答: {problem['answer']}")
+            print(f"解説: {problem['explanation']}\n")
+            cnt += 1
