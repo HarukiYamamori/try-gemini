@@ -7,7 +7,10 @@ Gemini API を利用して、数学の問題を自動作成する試み
 
 ## 使用方法
 [Google AI studio](https://aistudio.google.com/prompts/new_chat)から API key を発行し、.envファイルに記述<br>
-*intelliJ を使用している際は「実行構成の編集(Edit configuration)」から環境変数として設定してもいける
+*intelliJ を使用している際は「実行構成の編集(Edit configuration)」から環境変数として設定してもいける<br>
+<br>
+genre, difficulty, num_problems にはそれぞれ、「単元」「難易度」「問題数」を入力<br>
+例）<br>genre = "二次関数"<br>difficulty = "高校1年生レベル"<br>num_problems = 5
 
 ## 出力例
 <pre>
